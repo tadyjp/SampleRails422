@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: SampleRails422_production
-  username: SampleRails422
-  password: <%= ENV['SAMPLERAILS422_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
